@@ -15,7 +15,7 @@ namespace XUnity.AutoTranslator.Plugin.Core.Fonts
       {
          UnityEngine.Object font = null;
 
-         var overrideFontPath = Path.Combine( Paths.GameRoot, assetBundle );
+         var overrideFontPath = Path.Combine( Paths.PluginPath, assetBundle );
          if( File.Exists( overrideFontPath ) )
          {
             XuaLogger.AutoTranslator.Info( "Attempting to load TextMesh Pro font from asset bundle." );
